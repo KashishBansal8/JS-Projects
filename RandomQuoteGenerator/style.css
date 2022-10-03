@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: teal;
+    height: 100vh;
+}
+.generate-quote-block {
+    width: 50%;
+    margin: auto;
+    padding: 60px 35px;
+    background-color: salmon;
+    min-height: 250px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.gen-quote-btn {
+    background-color: teal;
+    border: none;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 22px;
+}
+.quote-author-cont {
+    display: flex;
+    flex-direction: column;
+}
+.add-gen-author {
+    padding-top: 10px;
+    display: flex;
+    justify-content: end;
+    font-size: 17px;
+    color: teal;
+}

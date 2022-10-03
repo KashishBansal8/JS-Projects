@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pass The Message Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="msg-main-block">
+      <div class="msg-wrapper">
+        <form class="type-msg-form">
+          <label for="msgInput" class="msg-label"
+            >A Messge You Would Like To Pass</label
+          >
+          <input type="text" id="msgInput" class="msg-input" autofocus />
+          <input
+            type="submit"
+            value="Submit"
+            id="submitBtn"
+            class="submit-btn"
+          />
+        </form>
+        <span class="err-msg" id="errMsg">Please enter value</span>
+        <div class="get-msg-block">
+          <span>Last Message Delivered</span>
+          <span class="get-msg-span" id="getMsg"></span>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
