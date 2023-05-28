@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgb(198 97 97), rgb(6, 58, 147));
+}
+
+.clock {
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    border: 15px solid white;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hand {
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 6px;
+    background-color: black;
+    background: linear-gradient(to bottom right, rgb(39 4 50), rgb(124 134 150));
+    /*  From where the axis will rotate, we want it to rotate from the last end i.e center of circle
+        by default it's value is set to 50%
+    */
+    transform-origin: 100%;
+
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}

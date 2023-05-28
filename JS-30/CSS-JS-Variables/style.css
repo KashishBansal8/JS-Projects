@@ -1,0 +1,47 @@
+:root {
+    --spacing: 10px;
+    --blur: 10px;
+    --basecolor: rgb(188, 188, 82);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.css-js-variable-cont {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 30px;
+    background: linear-gradient(to right bottom, rgb(121 135 135), rgb(25 31 52));
+}
+
+.css-js-variable-cont span {
+    color: var(--basecolor);
+}
+
+.css-js-variable-cont h1 {
+    font-size: 42px;
+
+}
+
+.css-js-variable-cont label {
+    font-size: 28px;
+    padding: 0 12px;
+}
+
+.css-js-variable-cont img {
+    height: 75%;
+    width: 75%;
+    object-fit: cover;
+    border: 10px;
+    padding: var(--spacing);
+    background-color: var(--basecolor);
+    filter: blur(var(--blur));
+    border-radius: 10px;
+}
