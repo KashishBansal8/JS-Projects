@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: yellowgreen;
+}
+
+.multiple-checkboxes {
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: black;
+    max-width: 30%;
+    padding: 40px;
+}
+
+.multiple-checkboxes .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+input[type="checkbox"] {
+    padding: 20px;
+    background-color: red;
+}
+
+input[type="checkbox"]:checked+p {
+    text-decoration: line-through;
+}
