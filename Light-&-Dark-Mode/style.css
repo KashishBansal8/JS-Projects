@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    padding: 40px;
+    height: 100vh;
+}
+
+.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+.toggle-theme {
+    margin: 30px;
+}

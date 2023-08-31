@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Rating Display</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <div class="star-rating-display-cont">
+        <h1>Star rating Display</h1>
+        <div class="stars-cont">
+            <div class="star">
+                <span class="star-partial fa fa-star"> </span>
+            </div>
+            <div class="star">
+                <span class="star-partial fa fa-star"> </span>
+            </div>
+            <div class="star">
+                <span class="star-partial fa fa-star"> </span>
+            </div>
+            <div class="star">
+                <span class="star-partial fa fa-star"> </span>
+            </div>
+            <div class="star">
+                <span class="star-partial fa fa-star"></span>
+            </div>
+        </div>
+
+        <div class="emoji-cont">
+        </div>
+
+        <div class="rating-cont">
+            <div class="rating-vaue" id="ratingInputVal">0</div>
+            <input type="range" name="rangeSlider" id="rangeSlider" min="0" max="5">
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
