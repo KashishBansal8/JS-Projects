@@ -1,0 +1,32 @@
+/* Using Custom properties in CSS */
+
+body {
+    --text-color: #222;
+    --bkg-color: #fff;
+    --anchor-color: #0033cc;
+}
+
+body.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #121212;
+    --anchor-color: #809fff;
+}
+
+
+body {
+    background-color: var(--bkg-color);
+    color: var(--text-color);
+}
+
+h1 {
+    color: var(--anchor-color);
+}
+
+.main-container {
+    padding: 40px;
+    height: 100vh;
+}
+
+.toggle-theme {
+    margin: 30px;
+}

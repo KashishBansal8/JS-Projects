@@ -1,0 +1,32 @@
+.main-timeline-cont {
+    position: relative;
+}
+
+.main-timeline-cont::after {
+    content: '';
+    border: 1px solid black;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+}
+
+.main-timeline-cont .left-cont,
+.main-timeline-cont .right-cont {
+    border: 1px solid;
+    border-radius: 5px;
+    max-width: 50%;
+    position: relative;
+}
+
+.main-timeline-cont .left-cont {
+    /* float: left; */
+    left: 0;
+}
+
+.main-timeline-cont .right-cont {
+    /* float: right; */
+    left: 50%;
+}

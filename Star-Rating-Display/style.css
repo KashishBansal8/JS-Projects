@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.star-rating-display-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 40px;
+}
+
+.stars-cont {
+    display: flex;
+    gap: 25px;
+}
+
+.star .star-partial {
+    font-size: 25px;
+    transition: all ease-in 0.1s;
+
+}
+
+.change-color {
+    color: red;
+}
+
+.star-partial:hover {
+    color: red;
+}
+
+.emoji-cont {
+    font-size: 40px;
+    /* display: none; */
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}

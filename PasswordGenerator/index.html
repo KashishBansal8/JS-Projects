@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="main-cont">
+        <h1 class="main-heading">Password Generator</h1>
+        <div class="get-password-cont">
+            <input type="text" class="generate-password-input" id="generatePasswordInput">
+            <button class="copy-btn" id="copyBtn"></button>
+        </div>
+        <div class="generate-password-cont">
+            <div class="password-length-cont">
+                <h2 class="password-length-cont-heading">Password Length</h2>
+                <span class="password-length-val" id="passwordLenVal"></span>
+            </div>
+            <div class="password-range-cont">
+                <input type="range" min="1" max="20" value="8" class="slider" id="passwordRangeSlider">
+            </div>
+            <div class="password-strength-cont">
+                <div>
+                    <input type="checkbox" id="uppercaseCheck" name="uppercaseLetter" value="UppercaseLetter">
+                    <label for="passwordStrengthCheck1"> Include Uppercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="lowercaseCheck" name="lowercaseLetter" value="LowercaseLetter">
+                    <label for="passwordStrengthCheck2"> Include Lowercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="numberCheck" name="numbers" value="Numbers">
+                    <label for="passwordStrengthCheck3"> Include Numbers</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="symbolCheck" name="symbols" value="Symbols">
+                    <label for="passwordStrengthCheck4"> Include Symbols</label>
+                </div>
+                <div class="find-strength">
+                    <span class="strength-heading">Strength</span>
+                    <span class="circle" id="findStrengthCircle"></span>
+                </div>
+            </div>
+            <button class="generate-password" id="generatePasswordBtn">Generate Password</button>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
