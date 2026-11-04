@@ -1,0 +1,12 @@
+body {
+    height: 300vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-cont {
+    border: 1px solid red;
+    width: 500px;
+    height: 300px;
+}
