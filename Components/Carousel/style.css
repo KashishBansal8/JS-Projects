@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-slider-cont {
+    height: 100vh;
+}
+
+.img-cont {
+    position: relative;
+}
+
+img {
+    max-width: 500px;
+}
+
+.left-arrow-btn,
+.right-arrow-btn {
+    position: absolute;
+    /* top: 50%;
+    transform: translateY(-50%); */
+}
+
+.left-arrow-btn {
+    left: 0;
+
+}
+
+.right-arrow-btn {
+    right: 0;
+}
+
+.slick-dots-cont {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: -6%;
+
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.active {
+    background-color: black;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="todo-lit-wrapper">
+        <h1>Create your TODO LIST</h1>
+
+        <form action="#" class="add-todo-form">
+            <input type="text" name="todoItem" id="todoItemInput">
+            <input type="submit" value="Add Item" id="addItemBtn">
+        </form>
+
+        <div class="filter-items-cont">
+            <input type="text" name="filterItem" id="filterItem" placeholder="Filter Items">
+        </div>
+
+        <ul class="todo-items-list" id="todoItemList">
+            <li>
+                Apple
+                <button class="remove-item btn" id="removeItem">
+                    <span class="cross-icon">❌ </span>
+                </button>
+            </li>
+        </ul>
+        <div class="no-filtered-item hide">Oops!, No result found.</div>
+        <button class="clear-all-btn btn" id="clearBtn">Clear All</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
